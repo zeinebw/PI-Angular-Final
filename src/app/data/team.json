@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "photo": "assets/img/team/nourhen.jpg",
+        "name": "Ben Slimen Nourhen",
+        "designation": "Investment Advisor",
+        "socialmedia": [
+            {
+                "icon": "youtube",
+                "iconclass": "youtube",
+                "url": "#"
+            },
+            {
+                "icon": "linkedin",
+                "iconclass": "linkedin",
+                "url": "#"
+            },
+            {
+                "icon": "facebook-f",
+                "iconclass": "facebook",
+                "url": "#"
+            },
+            {
+                "icon": "twitter",
+                "iconclass": "twitter",
+                "url": "#"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "photo": "assets/img/team/elyes.jpg",
+        "name": "Ben Romdhane Elyes",
+        "designation": "Client Advisor",
+        "socialmedia": [
+            {
+                "icon": "youtube",
+                "iconclass": "youtube",
+                "url": "#"
+            },
+            {
+                "icon": "linkedin",
+                "iconclass": "linkedin",
+                "url": "#"
+            },
+            {
+                "icon": "facebook-f",
+                "iconclass": "facebook",
+                "url": "#"
+            },
+            {
+                "icon": "twitter",
+                "iconclass": "twitter",
+                "url": "#"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "photo": "assets/img/team/nourhen.jpg",
+        "name": "Masmoudi Hadil",
+        "designation": "Investissement Advisor",
+        "socialmedia": [
+            {
+                "icon": "youtube",
+                "iconclass": "youtube",
+                "url": "#"
+            },
+            {
+                "icon": "linkedin",
+                "iconclass": "linkedin",
+                "url": "#"
+            },
+            {
+                "icon": "facebook-f",
+                "iconclass": "facebook",
+                "url": "#"
+            },
+            {
+                "icon": "twitter",
+                "iconclass": "twitter",
+                "url": "#"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "photo": "assets/img/team/nourhen.jpg",
+        "name": "Chabchoub Mohamed",
+        "designation": "Claims Advisor",
+        "socialmedia": [
+            {
+                "icon": "youtube",
+                "iconclass": "youtube",
+                "url": "#"
+            },
+            {
+                "icon": "linkedin",
+                "iconclass": "linkedin",
+                "url": "#"
+            },
+            {
+                "icon": "facebook-f",
+                "iconclass": "facebook",
+                "url": "#"
+            },
+            {
+                "icon": "twitter",
+                "iconclass": "twitter",
+                "url": "#"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "photo": "assets/img/team/zeineb.JPG",
+        "name": "Walha Zeineb",
+        "designation": "Partners Advisor",
+        "socialmedia": [
+            {
+                "icon": "youtube",
+                "iconclass": "youtube",
+                "url": "#"
+            },
+            {
+                "icon": "linkedin",
+                "iconclass": "linkedin",
+                "url": "#"
+            },
+            {
+                "icon": "facebook-f",
+                "iconclass": "facebook",
+                "url": "#"
+            },
+            {
+                "icon": "twitter",
+                "iconclass": "twitter",
+                "url": "#"
+            }
+        ]
+    }
+]

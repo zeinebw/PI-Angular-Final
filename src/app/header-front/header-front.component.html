@@ -1,0 +1,192 @@
+<!-- Start Header -->
+<header class="header-style-1">
+    <!-- Start Topbar -->
+    <div class="topbar-style-1">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="left-side">
+              <div class="language-box">
+                <div class="language p-relative">
+                  <img src="assets/img/flag.png" alt="flag">
+                  <select>
+                    <option>English</option>
+                    <option>German</option>
+                    <option>Japanese</option>
+                  </select>
+                </div>
+              </div>
+              <p class="text-custom-white no-margin">9000 ESPRIT , Ariana tunisie</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="right-side">
+              <ul class="custom">
+                <li><a href="#" class="text-custom-white fs-14"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li><a href="#" class="text-custom-white fs-14"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li><a href="#" class="text-custom-white fs-14"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li><a href="#" class="text-custom-white fs-14"><i class="fab fa-youtube"></i></a>
+                </li>
+                <li class="search">
+                  <a href="javascript:void(0)" class="text-custom-white fs-14" (click)="searchToggle()">
+                    <i class="fas fa-search" [ngClass]="searchmethod ? '' : 'fa-times'"></i>
+                  </a>
+                </li>
+                <li class="topbar-search" [ngClass]="searchmethod ? '' : 'search-visible'">
+                  <form method="get">
+                    <input type="search" class="form-control form-control-custom" name="search" placeholder="Search..." value="">
+                  </form>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Topbar -->
+    <!-- Start Navigation -->
+    <div class="main-navigation-style-1" id="can-sticky">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="navigation">
+              <div class="logo">
+                <a routerLink="/">
+                </a>
+              </div>
+              <div class="main-menu" [ngClass]="navmethod ? '' : 'active'">
+                <div class="mobile-logo">
+                  <a routerLink="/">
+                  </a>
+                </div>
+                <nav>
+                  <ul class="custom">
+                    <li class="menu-item menu-item-has-children"> <a href="#" class="text-custom-white">Homepages</a>
+                      <ul class="custom sub-menu">
+                        <li class="menu-item"> <a routerLink="/" class="text-light-grey">Homepage 1</a>
+                        </li>
+  
+                        <li class="menu-item"> <a routerLink="/home-v2" class="text-light-grey">Homepage 2</a>
+                        </li>
+                        <li class="menu-item"> <a routerLink="/guarantors_back" class="text-light-grey">Guarantors </a>
+                        </li>
+                        <li class="menu-item"> <a routerLink="/credit_back" class="text-light-grey">Credits </a>
+                        </li>
+                        <li class="menu-item"> <a routerLink="/simulator" class="text-light-grey">Simulator </a>
+                        </li>
+                        <li class="menu-item"> <a routerLink="/applycredit" class="text-light-grey">Apply for Credit </a>
+                        </li>
+                      </ul>
+                    </li>
+  <!--                  <li class="menu-item "> <a routerLink="/finance" class="text-custom-white">Finance</a>-->
+  <!--                  </li>-->
+                    <li class="menu-item  menu-item-has-children"> <a href="#" class="text-custom-white">Finance</a>
+                      <ul class="custom sub-menu">
+                        <li class="menu-item"> <a routerLink="/blog" class="text-light-grey">Blog</a>
+                        </li>
+                        <li class="menu-item"> <a routerLink="/blog-sidebar" class="text-light-grey">Blog Left Sidebar</a>
+                        </li>
+                        <li class="menu-item"> <a routerLink="/blog-single/1" class="text-light-grey">Blog Detail</a>
+                        </li>
+                        <li class="menu-item"> <a routerLink="/partners" class="text-light-grey">Partners</a>
+                        </li>
+  
+                        <li class="menu-item"> <a routerLink="/products" class="text-light-grey">Products</a>
+                        </li>
+                        <li class="menu-item"> <a routerLink="/packs" class="text-light-grey">Packs </a>
+                        </li>
+  
+                        <li class="menu-item"> <a routerLink="/accounts" class="text-light-grey">Your Accounts</a>
+                        </li>
+                        <li class="menu-item"> <a routerLink="/listaccfont" class="text-light-grey">Accounts List</a>
+                        </li>
+                        <li class="menu-item"> <a routerLink="/Addaccount" class="text-light-grey"> Add Account</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item  menu-item-has-children"> <a href="#" class="text-custom-white">Complaint</a>
+                      <ul class="custom sub-menu">
+                        <li class="menu-item"> <a routerLink="/AddRec" class="text-light-grey">Add complaint</a>
+                        </li>
+                        <li class="menu-item"> <a routerLink="/recclient" class="text-light-grey">List of your complaints</a>
+                        </li>
+                        <li class="menu-item"> <a routerLink="/not" class="text-light-grey">List of your notifications</a>
+                        </li>
+  
+  
+  
+                      </ul>
+                    </li>
+  
+                    <li class="menu-item   menu-item-has-children"> <a href="#" class="text-custom-white">Investment</a>
+                      <ul class="custom sub-menu">
+                        <li class="menu-item"> <a routerLink="/investuser" class="text-light-grey">Add Investment</a>
+                        </li>
+                        <li class="menu-item"> <a routerLink="/investmentsuser" class="text-light-grey">Details</a>
+                        </li>
+                        <li class="menu-item"> <a routerLink="/stocks" class="text-light-grey">Stocks</a>
+                        </li>
+                        <li class="menu-item"> <a routerLink="/interestuser" class="text-light-grey">Interest</a>
+                        </li>
+                        <li class="menu-item"> <a routerLink="/about" class="text-light-grey">About Us</a>
+                        </li>
+                        <li class="menu-item"> <a routerLink="/tab" class="text-light-grey">tab </a>
+                        </li>
+                        <li class="menu-item"> <a routerLink="/partnerf" class="text-light-grey">Partners List</a>
+                        </li>
+                        <li class="menu-item"> <a routerLink="/productf" class="text-light-grey">Products List</a>
+                        </li>
+                        <li class="menu-item"> <a routerLink="/packf" class="text-light-grey">Packs List</a>
+                        </li>
+                        <li class="menu-item "> <a routerLink="/tombola" class="text-custom-white">Spin</a>
+                        </li>
+  
+  
+  
+  
+                        <li class="menu-item  "> <a routerLink="/contact" class="text-light-grey">Contact Us</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children "> <a routerLink="#" class="text-custom-white">User Dashboard</a>
+                      <ul class="custom sub-menu">
+                        <li class="menu-item  "> <a routerLink="/loan-dashboard" class="text-custom-grey">User Dashboard</a>
+                        <li class="menu-item" > <a routerLink="/AgentPage" class="text-custom-grey"  >Agent</a></li>
+                        <li class="menu-item"  > <a routerLink="/AdminPage" class="text-custom-grey">Admin</a></li>
+                      </ul>
+                    </li>
+  
+  
+                  <li class="menu-item  "> <a routerLink="/MapPage" class="text-custom-white">MAP</a>
+                  </li>
+                  <li class="menu-item " > <a routerLink="/ClientPage" class="text-custom-white" >Sign IN</a></li>
+  
+  
+                  </ul>
+                </nav>
+                <div class="right-side">
+                  <div class="cta-btn">
+                    <a routerLink="/LoginPage" class="btn-first btn-submit">sign in</a>
+  
+                </div>
+                </div>
+              </div>
+              <div class="hamburger-menu">
+                <div class="menu-btn" [ngClass]="navmethod ? '' : 'active'" (click)="toggleNav()">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Navigation -->
+  </header>
+  <!-- End Header -->
+  

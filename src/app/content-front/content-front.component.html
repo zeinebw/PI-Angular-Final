@@ -1,0 +1,463 @@
+<!-- Start Slider -->
+<div class="slider parallax overlay-bg" id="banner-animation">
+    <div class="side-lines"> <span class="box"></span>
+        <span class="text">LEND</span>
+        <span class="line"></span>
+    </div>
+    <div class="transform-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ngx-slick-carousel #slickModal="slick-carousel" [config]="bannerConfig" class="banner-slider">
+                        <div ngxSlickItem class="slide-item" *ngFor="let item of banner">
+                            <div class="banner-text">
+                                <h1 class="text-custom-white fw-700 text-right">{{item.title}}</h1>
+                                <p class="text-custom-white text-center">{{item.text}}</p>                                
+                            </div>
+                        </div>
+                    </ngx-slick-carousel>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Start About -->
+<!-- start aboutus-2 -->
+<!-- start aboutus-2 -->
+<section class="section-padding lw-about-section p-relative">
+    <div class="side-lines right-side"> <span class="box"></span>
+        <span class="text"></span>
+        <span class="line"></span>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="ln-about-left-side p-relative full-height">
+                    <div class="first-img full-height">
+                        <img src="assets/img/blog-details.jpg" class="image-fit" alt="img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="lw-about-section-right">
+                    <h3 class="p-relative lw-about-right-heading">Not Fast Decision But Good Decision Fast.</h3>
+                    <div class="lw-about-right-content">
+                        <p>Microfinance generally refers
+                            <span class="text-gold">
+                                <strong>to the provision of basic financial services</strong>
+                            </span>
+                                such as loans, saving accounts and insurances for low-income but economically active people. In most instances the term microfinance refers to the provision of small loans for micro-entrepreneurs.
+                        </p>
+                        <div class="lw-about-right-list">
+                            <ul>
+                                <li> <i class="fas fa-check"></i>
+                                    Fast Loan</li>
+                                <li> <i class="fas fa-check"></i>
+                                    Less Fee </li>
+                                <li> <i class="fas fa-check"></i>
+                                    Less Paperwork </li>
+                                <li> <i class="fas fa-check"></i>
+                                    Less Interest </li>
+                            </ul>
+                        </div>
+                        <div class="lw-about-right-author">
+                            <div class="lw-about-signature">
+                                <h5>MoneyLend Team</h5>
+                            </div>
+                            <div class="lw-about-sign-image">
+                                <img src="assets/img/signature.png" alt="sign">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End aboutus-2 -->
+<!-- End aboutus-2 -->
+<!-- Start why choose us -->
+<section class="why-choose-us-style-2 section-padding">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-heading">
+                <h3 class="text-custom-black fw-700">Our services</h3>
+                <div class="section-description">
+                    <p > <strong>
+                        The personalized loan formula generated automatically based on 
+                        client needs,instant communication for renseignements to reduce  response time and a discount 
+                        with our partners and many other offers and opportunities to seize are the main features of 
+                        our application .
+                    </strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="square-tabs">
+                    <ul ngbNav #navwhyus="ngbNav" class="nav nav-tabs custom mb-xl-20">
+                        <li [ngbNavItem]="1">
+                           
+                            <ng-template ngbNavContent>
+                                <div class="tab-inner">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="img-sec mb-md-40">
+                                                <img src="assets/img/banking/banking-2.jpg" class="full-width" alt="img">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 align-self-center">
+                                            <div class="content-box">
+                                               
+                                                <div class="list">
+                                                    <div class="row no-gutters">
+                                                        <div class="col-sm-6">
+                                                            <div class="grid-box">
+                                                                <div class="grid-box-inner">
+                                                                    <a href="#" class="d-block clearfix">
+                                                                        <h5 class="text-custom-black">Loan Formula
+                                                                        </h5>
+                                                                        <div class="icon-box mb-xl-20"> <img
+                                                                                src="assets/img/banking/banking-1.png"
+                                                                                alt="img"></div>
+                                                                       
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="grid-box">
+                                                                <div class="grid-box-inner">
+                                                                    <a href="#" class="d-block clearfix">
+                                                                        <h5 class="text-custom-black">Account Management </h5>
+                                                                        <div class="icon-box mb-xl-20"> <img
+                                                                                src="assets/img/banking/banking-1.png"
+                                                                                alt="img"></div>
+                                                                      
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="grid-box">
+                                                                <div class="grid-box-inner">
+                                                                    <a href="#" class="d-block clearfix">
+                                                                        <h5 class="text-custom-black">Client Claims </h5>
+                                                                        <div class="icon-box mb-xl-20"> <img
+                                                                                src="assets/img/banking/banking-1.png"
+                                                                                alt="img"></div>
+                                                                      
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="grid-box">
+                                                                <div class="grid-box-inner">
+                                                                    <a href="#" class="d-block clearfix">
+                                                                        <h5 class="text-custom-black">Pack & Partners</h5>
+                                                                        <div class="icon-box mb-xl-20"> <img
+                                                                                src="assets/img/banking/banking-1.png"
+                                                                                alt="img"></div>
+                                                                       
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ng-template>
+                        </li>
+                      
+                    </ul>
+                    <div [ngbNavOutlet]="navwhyus" class="padding-20 bx-wrapper bg-custom-white"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End why choose us -->
+
+<!-- Start Banking Area -->
+<section class="banking-area pb-100">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="banking-image">
+                    <img src="assets/img/banking/banking-1.png" alt="image">
+
+                    <div class="shape-1">
+                        <img src="assets/img/banking/banking-shape-1.png" alt="image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="banking-content">
+                    <span>Business banking</span>
+                    <h3>We operate our banking services in many countries around the world</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+
+                    <ul class="banking-list">
+                        <li><i class="flaticon-check"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li><i class="flaticon-check"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</li>
+                        <li><i class="flaticon-check"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li><i class="flaticon-check"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Banking Area -->
+
+
+<!-- End Slider -->
+<!-- Start Intro -->
+
+<!-- End Intro -->
+<!-- Start Main Services -->
+
+<!-- End Main Services -->
+<!-- start Loan Calculator -->
+
+<!-- End Loan Calculator -->
+<!-- start lw-tab -->
+
+<!-- End lw-tab -->
+<!-- Start section process-->
+
+<!-- End section process-->
+
+<!-- Start Team Doctors -->
+<section class="section-padding bg-gradient doctors-team-style-2">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-heading">
+                <h3 class="text-custom-black fw-700">Our Team</h3>
+              
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 no-padding">
+                <ngx-slick-carousel #slickModal="slick-carousel" [config]="teamConfig" class="doctors-slider">
+                    <div ngxSlickItem class="slide-item col-12" *ngFor="let item of teamblock">
+                        <div class="team-block p-relative">
+                            <div class="inner-box">
+                                <div class="image animate-img">
+                                    <img [src]="item.photo" alt="{{item.name}}" class="full-width">
+                                    <div class="overlay-box">
+                                        <div class="overlay-inner p-relative full-height">
+                                            <ul class="team-social-box custom">
+                                                <li class="{{item.iconclass}}" *ngFor="let item of item.socialmedia">
+                                                    <a routerLink="{{item.url}}" class="fab fa-{{item.icon}} fs-16"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lower-content p-relative text-center">
+                                    <h4><a routerLink="/team" class="text-custom-black fw-600 fs-20">{{item.name}}</a>
+                                    </h4>
+                                    <p class="designation text-light-white">{{item.designation}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ngx-slick-carousel>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Team Doctors -->
+
+<!-- Start Top Services Area -->
+<section class="top-services-area pt-100 pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="top-services-item">
+                    <div class="icon">
+                        <i class="flaticon-protection"></i>
+                    </div>
+                    <h3>
+                        <a href="#">Protect your card</a>
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="link-btn">Get started <i class="flaticon-right-arrow"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="top-services-item">
+                    <div class="icon">
+                        <i class="flaticon-online-banking"></i>
+                    </div>
+                    <h3>
+                        <a href="#">Online banking</a>
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="link-btn">See more details <i class="flaticon-right-arrow"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                <div class="top-services-item">
+                    <div class="icon">
+                        <i class="flaticon-mobile-app"></i>
+                    </div>
+                    <h3>
+                        <a href="#">Discover new features</a>
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="link-btn">Download the app <i class="flaticon-right-arrow"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Top Services Area -->
+
+<!-- Start Faqs -->
+<section class="section-padding loan-faqs-sec bg-light-white findrate-top">
+   
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-5 col-lg-6 align-self-center">
+                <div class="section-header">
+                    <div class="section-heading">
+                        <h3 class="text-custom-black fw-700">Our FAQs</h3>
+                        <div class="section-description">
+                            <p class="text-light-white no-margin">Still have questions?
+                                <br>Our Client Success Team is always here to help
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="loan-faqs-leftside mb-md-80">
+                    <div class="support-card mb-xl-20">
+                        <div class="support-user">
+                            <img src="assets/img/banking/banking-1.png" class="image-fit" alt="img">
+                        </div>
+                        <div class="links text-center mb-xl-20"> <a href="#">contact@MoneyLend.tn</a>
+                            <a href="#">123-456-7890</a>
+                           
+                        </div>
+                        <div class="schdule">
+                            <ul class="custom">
+                                <li>Mon - Thurs <span class="text-light-white">6am – 6pm PT</span>
+                                </li>
+                                <li>Fri <span class="text-light-white">6am – 6pm PT</span>
+                                </li>
+                                <li>Sat - Sun <span class="text-light-white">7am – 4pm PT</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-xl-7 col-lg-6 align-self-center">
+                <ngb-accordion [closeOthers]="true" activeIds="static-1" class="faqs-accordion">
+                    <ngb-panel id="static-1">
+                        <ng-template ngbPanelTitle>
+                            What is an unsecured personal loan?
+                        </ng-template>
+                        <ng-template ngbPanelContent>
+                            <p class="text-light-white">Once approved for an unsecured loan, you'll make monthly
+                                payments to pay it back in full, plus interest. The loan terms and interest rate vary
+                                based on the lender and your credit.</p>
+                            <p class="text-light-white no-margin">Each lender has their own set requirements to qualify
+                                for a personal loan. A hard inquiry can impact your credit score by two to nine points,
+                                but typically by no more than five.</p>
+                        </ng-template>
+                    </ngb-panel>
+                    <ngb-panel id="static-2">
+                        <ng-template ngbPanelTitle>
+                            What are the requirements to qualify?
+                        </ng-template>
+                        <ng-template ngbPanelContent>
+                            <p class="text-light-white no-margin">Each lender has their own set requirements to qualify
+                                for a personal loan.</p>
+                        </ng-template>
+                    </ngb-panel>
+                    <ngb-panel id="static-3">
+                        <ng-template ngbPanelTitle>
+                            How much can I borrow with a personal loan?
+                        </ng-template>
+                        <ng-template ngbPanelContent>
+                            <p class="text-light-white">Many lenders also have minimum credit score requirements for
+                                credit approval.</p>
+                            <p class="text-light-white no-margin">The upper limits for personal loans vary by lender but
+                                typically fall in the $35,000 to $50,000 range.</p>
+                        </ng-template>
+                    </ngb-panel>
+                    <ngb-panel id="static-4">
+                        <ng-template ngbPanelTitle>
+                            Will checking my rates affect my credit score?
+                        </ng-template>
+                        <ng-template ngbPanelContent>
+                            <p class="text-light-white">Using Loanly to check your rates doesn’t affect your credit
+                                score. Here’s how it works: Loanly's prequalification process uses a soft credit inquiry
+                                that you having to apply for a loan.</p>
+                            <p class="text-light-white no-margin">You'll be asked to authorize a hard credit inquiry
+                                when you apply for the loan. A hard inquiry can impact your credit score by two to nine
+                                points, but typically by no more than five.</p>
+                        </ng-template>
+                    </ngb-panel>
+                    <ngb-panel id="static-5">
+                        <ng-template ngbPanelTitle>
+                            What rate should I expect and how can I get the best rate?
+                        </ng-template>
+                        <ng-template ngbPanelContent>
+                            <p class="text-light-white">Some lenders even offer an autopay discount if you authorize
+                                your monthly loan payments to be directly withdrawn from your bank account.</p>
+                            <p class="text-light-white no-margin">Qualifying for the lowest rates offered by a lender is
+                                dependent on your online application, credit approval and score, loan terms, and other
+                                factors.</p>
+                        </ng-template>
+                    </ngb-panel>
+                    <ngb-panel id="static-6">
+                        <ng-template ngbPanelTitle>
+                            How quickly will I receive my funds?
+                        </ng-template>
+                        <ng-template ngbPanelContent>
+                            <p class="text-light-white no-margin">Once you’ve completed the loan application process,
+                                most lenders can fund your loan by the next business day (though it can take up to about
+                                a week, depending on the lender and your application).</p>
+                        </ng-template>
+                    </ngb-panel>
+                    <ngb-panel id="static-7">
+                        <ng-template ngbPanelTitle>
+                            Can I use personal loans for debt consolidation?
+                        </ng-template>
+                        <ng-template ngbPanelContent>
+                            <p class="text-light-white">Yes. In fact, personal loans offer many debt consolidation
+                                benefits.</p>
+                            <p class="text-light-white no-margin">Many credit cards also carry variable rates, which can
+                                cause the amount you pay in interest to fluctuate as rates change.</p>
+                        </ng-template>
+                    </ngb-panel>
+                    <ngb-panel id="static-8">
+                        <ng-template ngbPanelTitle>
+                            How else can I use a personal loan?
+                        </ng-template>
+                        <ng-template ngbPanelContent>
+                            <p class="text-light-white no-margin">You’re typically not limited in how you can use your
+                                personal loan funds. Personal loans can be used to pay down high-interest credit card
+                                debt, meet unexpected needs like medical bills, take care of a major purchase like a new
+                                refrigerator, or fund home improvement projects. However, some lenders only provide
+                                loans for specific purposes (and some rates vary based on what you use it for), so you
+                                will be asked for the purpose of your loan.</p>
+                        </ng-template>
+                    </ngb-panel>
+                </ngb-accordion>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Faqs -->

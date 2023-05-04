@@ -1,0 +1,48 @@
+<app-sousheader></app-sousheader>
+<section class="section-padding-bottom ln-loan-calculator-style">
+  <div class="container">
+      <div class="row">
+          <div class="offset-lg-3 col-lg-6">
+              <div class="ln-loan-calculator-wrap">
+<div class="loan-price-wrap">
+  <h4 class="text-center text-custom-black fw-600">Investment Management</h4>
+                    <p class="text-custom-black text-center">Create New Investment</p>
+  <div class="quantity mb-xl-20">
+      <input type="number" class="form-control form-control-custom"  #amount="ngModel"
+       [(ngModel)] = "Invest.amount" name = "name" placeholder="Enter the amount ( exemple : 1000 )" >
+      <button class="minus-btn btn-first btn-submit-fill btn-height" type="button" (click)="decrement()"> <i class="fas fa-minus"></i></button>
+      <button class="plus-btn btn-first btn-submit-fill btn-height border-0" type="button" (click)="increment()"> <i class="fas fa-plus"></i></button>
+  </div>
+  <div class="quantity mb-xl-20">
+    <input type="number" class="form-control form-control-custom"  #durationInDays="ngModel" 
+     [(ngModel)] = "Invest.durationInDays" name = "name" placeholder="Enter the duration in days" >
+     <button class="minus-btn btn-first btn-submit-fill btn-height" type="button" (click)="decrement()"> <i class="fas fa-minus"></i></button>
+      <button class="plus-btn btn-first btn-submit-fill btn-height border-0" type="button" (click)="increment()"> <i class="fas fa-plus"></i></button>
+</div>
+<div class="quantity mb-xl-20">
+    <input type="date" class="form-control form-control-custom"  #dateInvest="ngModel"
+     [(ngModel)] = "Invest.dateInvest" name = "name" placeholder="Enter the date" >
+</div>
+<div class="quantity mb-xl-20">
+    <select class="form-control form-control-custom" #typeInvest="ngModel" [(ngModel)]="Invest.typeInvest" name="name">
+        <option>STOCKS</option>
+        <option>PLACEMENT_PRECOMPOUNDED</option>
+        <option>PLACEMENT_POSTCOMPOUNDED</option>
+    </select>
+</div>
+
+</div>
+<div class="col-12" >
+  <button (click) = "addFund()"   class="btn-first btn-submit text-light-blue full-width" type ="submit" ><b>Add New Fund</b></button>
+</div>
+<div class="col-12" >
+  <button (click)="goToDeails()"   class="btn-first btn-submit text-light-blue full-width" type ="submit" ><b>View Details Funds</b></button>
+</div>
+<div class="col-12" >
+  <button (click) = "addFund()"   class="btn-first btn-submit text-light-blue full-width" type ="submit" ><b>Add New Fund</b></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>

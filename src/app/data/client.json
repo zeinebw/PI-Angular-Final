@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "photo": "assets/img/client/client-1.jpg",
+        "companyname":"Lorem Ipsum"
+    },
+    {
+        "id": 2,
+        "photo": "assets/img/client/client-1.jpg",
+        "companyname":"Lorem Ipsum"
+    },
+    {
+        "id": 3,
+        "photo": "assets/img/client/client-1.jpg",
+        "companyname":"Lorem Ipsum"
+    },
+    {
+        "id": 4,
+        "photo": "assets/img/client/client-1.jpg",
+        "companyname":"Lorem Ipsum"
+    },
+    {
+        "id": 5,
+        "photo": "assets/img/client/client-1.jpg",
+        "companyname":"Lorem Ipsum"
+    },
+    {
+        "id": 6,
+        "photo": "assets/img/client/client-1.jpg",
+        "companyname":"Lorem Ipsum"
+    }
+]

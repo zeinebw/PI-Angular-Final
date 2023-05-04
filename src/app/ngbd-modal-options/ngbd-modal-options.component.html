@@ -1,0 +1,37 @@
+<div class="card-body">
+  <form [formGroup]="reactiveform">
+    <h6 class="heading-small text-muted mb-4">Enter the details :</h6>
+      <div class="pl-lg-4">
+      <div class="row">
+      <div class="col-lg-6">
+          <div class="form-group">
+              <label class="form-control-label" for="beginningPrice">Beginning Price</label>   
+              <input type="number" id="beginningPrice" class="form-control form-control-alternative" formControlName="beginningPrice" placeholder="enter the beginning price">             
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="form-group">
+            <label class="form-control-label" for="endingPrice">Ending Price</label>
+            <input type="number" id="endingPrice" class="form-control form-control-alternative" formControlName="endingPrice" placeholder="enter the ending price">
+          </div>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="form-group">
+            <label class="form-control-label" for="dividends">Dividends</label>
+            <input type="number" id="dividends" class="form-control form-control-alternative" formControlName="dividends" placeholder="enter the dividends">
+          </div>
+        </div>
+        </div>
+      </div>
+        <div class="col-16 text-right">
+          <button type="submit" class="btn bg-gradient-danger btn-primary" [disabled]="!reactiveform.valid">Save</button></div>
+        </form>
+        </div>
+
+  
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" (click)="cancel()">Close</button>
+  <button type="button" class="btn btn-primary">Submit</button>
+</div>

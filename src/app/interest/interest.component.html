@@ -1,0 +1,211 @@
+<div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="min-height: 600px; background-image: url(assets/imgang/theme/bourse.jpg); background-size: cover; background-position: center top;">
+  <!-- Mask -->
+  <span class="mask opacity-6" style="backdrop-filter: blur(5px);"></span>
+  <!-- Header container -->
+  <div class="container-fluid d-flex align-items-center">
+    <div class="row">
+      <div class="col-lg-7 col-md-10">
+        <h1 class="display-2 text-white">Hello</h1>
+        <p class="text-white mt-0 mb-5"><strong>This is your Investment page. You can see the progress you've made with your work and manage your Investments.</strong></p>
+        <a routerLink="/investment" class="btn btn-primary btn-lg bg-gradient text-dark" style="background-image: linear-gradient(to right, #f14c47, #fcfcfcf6);">View List of investments</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid mt--7">
+  <div class="row">
+    <div class="col-xl-4 order-xl-2 mb-5 mb-xl-0">
+      <div class="card card-profile shadow">
+        <div class="row justify-content-center">
+          <div class="col-lg-3 order-lg-2">
+            <div class="card-profile-image">
+              <a href="javascript:void(0)">
+                <img src="assets/imgang/theme/red.png" class="rounded-circle">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
+          <div class="d-flex justify-content-between">
+            <a href="javascript:void(0)" class="btn btn-sm btn-info mr-4">Connect</a>
+            <a href="javascript:void(0)" class="btn btn-sm btn-default float-right">Message</a>
+          </div>
+        </div>
+        <div class="card-body pt-0 pt-md-4">
+          <div class="row">
+            <div class="col">
+              
+            </div>
+          </div>
+          <hr>
+          <div class="text-center">
+            <h3>
+              MoneyLend<span class="font-weight-light">, Tunisia</span>
+            </h3>
+            <div class="h5 font-weight-300">
+              <i class="ni location_pin mr-2"></i>Ariana, Tunisia
+            </div>
+            <div class="h5 mt-4">
+              <i class="ni business_briefcase-24 mr-2"></i>Solution Manager - Creative Tim Officer
+            </div>
+            <div>
+              <i class="ni education_hat mr-2"></i>University of Computer Science
+            </div>
+            <hr class="my-4" />
+            <p>Ryan — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music.</p>
+            <p> 
+              Welcome to fast, easy MicroFinance. Make a lasting impact by changing lives around the world.</p>
+            <a href="javascript:void(0)">Show more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-8 order-xl-1">
+      <div class="card bg-secondary shadow">
+        <div class="card-header bg-white border-0">
+          <div class="row align-items-center">
+            <div class="col-8">
+              <h3 class="mb-0">Investment Management</h3>
+          </div>
+          <div class="col-4 text-right">
+            <a href="#" (click)="showForm1(); $event.preventDefault()">Interest</a>
+            <a href="#" (click)="showForm2(); $event.preventDefault()">Interest Rate</a>
+            <a href="#" (click)="showForm3(); $event.preventDefault()">Gain</a>
+          </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <form [formGroup]="reactiveform" *ngIf="isForm1Displayed" (ngSubmit)="calculateInterest()">
+            <h6 class="heading-small text-muted mb-4">Interest of investment</h6>
+              <div class="pl-lg-4">
+              <div class="row">
+              <div class="col-lg-6">
+                  <div class="form-group">
+                      <label class="form-control-label" for="beginningPrice">Beginning Price</label> 
+                      <input type="number" id="beginningPrice" class="form-control form-control-alternative" formControlName="beginningPrice" placeholder="enter the beginning price" [readonly]="isPlacementType()">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="endingPrice">Ending Price</label>
+                    <input type="number" id="endingPrice" class="form-control form-control-alternative" formControlName="endingPrice" placeholder="enter the ending price">
+                  </div>
+                </div>
+                </div>
+            </div>
+            <hr class="my-4" />
+            <!-- Address -->
+            <h6 class="heading-small text-muted mb-4">The interest value</h6>
+            <div class="pl-lg-4">
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="form-group">
+                        <div class="col-16 text-right">
+                      <button type="submit" class="btn bg-gradient-danger btn-primary btn-sm">Calculate</button>
+                      </div>
+                      <label class="form-control-label" for="result">Result</label>
+                        <input type="number" id="result" class="form-control form-control-alternative" placeholder="result" value={{interest}}>
+                      </div>
+                  </div>
+              </div>
+              </div>
+                </form>
+                </div>
+                <div class="card-body">
+                  <form [formGroup]="reactiveform" *ngIf="isForm2Displayed" (ngSubmit)="calculateRate()">
+                    <h6 class="heading-small text-muted mb-4">Interest Rate of investment</h6>
+                      <div class="pl-lg-4">
+                      <div class="row">
+                      <div class="col-lg-6">
+                          <div class="form-group">
+                              <label class="form-control-label" for="beginningPrice">Beginning Price</label> 
+                              <input type="number" id="beginningPrice" class="form-control form-control-alternative" formControlName="beginningPrice" placeholder="enter the beginning price" [readonly]="isPlacementType()">
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="form-group">
+                            <label class="form-control-label" for="endingPrice">Ending Price</label>
+                            <input type="number" id="endingPrice" class="form-control form-control-alternative" formControlName="endingPrice" placeholder="enter the ending price"[readonly]="isPlacementType()">
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                    <hr class="my-4" />
+                    <!-- Address -->
+                    <h6 class="heading-small text-muted mb-4">The interest value</h6>
+                    <div class="pl-lg-4">
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="form-group">
+                                <div class="col-16 text-right">
+                              <button type="submit" class="btn bg-gradient-danger btn-primary btn-sm">Calculate</button>
+                              </div>
+                              <label class="form-control-label" for="result">Result</label>
+                                <input type="number" id="result" class="form-control form-control-alternative" placeholder="result" value={{interestRate}}>
+                              </div>
+                          </div>
+                      </div>
+                      </div>
+                        </form>
+                        </div>
+                        <div class="card-body">
+                          <form [formGroup]="reactiveform" *ngIf="isForm3Displayed" (ngSubmit)="calculatePlacementGain()">
+                            <h6 class="heading-small text-muted mb-4">Interest of investment</h6>
+                              <div class="pl-lg-4">
+                              <div class="row">
+                              <div class="col-lg-6">
+                                  <div class="form-group">
+                                      <label class="form-control-label" for="beginningPrice">Beginning Price</label> 
+                                      <input type="number" id="beginningPrice" class="form-control form-control-alternative" formControlName="beginningPrice" placeholder="enter the beginning price" [readonly]="isPlacementType()">
+                                  </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="form-group">
+                                    <label class="form-control-label" for="endingPrice">Ending Price</label>
+                                    <input type="number" id="endingPrice" class="form-control form-control-alternative" formControlName="endingPrice" placeholder="enter the ending price">
+                                  </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="form-group">
+                                    <label class="form-control-label" for="compoundingPeriodInMonths">compounding Period In Months</label>
+                                    <input type="number" id="compoundingPeriodInMonths" class="form-control form-control-alternative" formControlName="compoundingPeriodInMonths" placeholder="enter the compounding Period In Months" [readonly]="isSTOCKType()">
+                                  </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="form-group">
+                                    <label class="form-control-label" for="dividends">Dividends</label>
+                                    <input type="number" id="dividends" class="form-control form-control-alternative" formControlName="dividends" placeholder="enter the dividends"[readonly]="isPlacementType()">
+                                  </div>
+                                </div>
+                                </div>
+                            </div>
+                            <hr class="my-4" />
+                            <!-- Address -->
+                            <h6 class="heading-small text-muted mb-4">The interest value</h6>
+                            <div class="pl-lg-4">
+                              <div class="row">
+                                  <div class="col-md-12">
+                                      <div class="form-group">
+                                        <div class="col-16 text-right">
+                                      <button type="submit" class="btn bg-gradient-danger btn-primary btn-sm">Calculate</button>
+                                      </div>
+                                      <label class="form-control-label" for="result">Result</label>
+                                        <input type="text" id="result" class="form-control form-control-alternative" placeholder="result" value={{gain}}>
+                                      </div>
+                                  </div>
+                              </div>
+                              </div>
+                                </form>
+                                </div>
+              
+              
+              
+              
+          </div>
+      </div>
+    </div>
+</div>
+  
